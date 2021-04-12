@@ -1,23 +1,7 @@
-def indexes(a):
+def indexes(item):
+    ints = [1, 3, 3, 5, 4, 3]
     
-    number = int(input("enter the number you want to search for: "))
-    for i in list:
-        print(enumerate(list.index(number))
+    indexes = [i for i in range(len(ints)) if ints[i] == item]
+    print(f"Item {item} is found at index {indexes}")
 
-
-#defines the list
-list = []
-
-#asks for a given amount of elements
-n = int(input("Enter number of elements : "))
-
-#loops until we have the desired ammount
-for i in range (0,n):
-    elements = int(input("Input an element :"))
-    list.append(elements)
-
-#print(list.index(5))
-indexes(list)
-
-
-
+indexes(4)
